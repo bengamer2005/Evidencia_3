@@ -4,59 +4,84 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-}
+    display: flex;
+  }
 
-header {
+  header {
     background-color: #00695c;
     color: white;
     padding: 2rem 1rem;
     text-align: center;
-}
+    width: 100%;
+  }
 
-main {
+  .sidebar {
+    width: 220px;
+    background-color: #004d40;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 4rem;
+  }
+
+  .sidebar a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #00695c;
+  }
+
+  .sidebar a:hover {
+    background-color: #00796b;
+  }
+
+  main {
+    margin-left: 240px;
     max-width: 900px;
-    margin: auto;
     padding: 2rem;
-}
+  }
 
-h2 {
+  h2 {
     color: #00796b;
-}
+  }
 
-section {
+  section {
     margin-bottom: 3rem;
     border-bottom: 1px solid #ccc;
     padding-bottom: 2rem;
-}
+  }
 
-ul.resources li {
+  ul.resources li {
     margin-bottom: 0.5rem;
-}
+  }
 
-footer {
+  footer {
     background-color: #eeeeee;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
     margin-top: 3rem;
-}
+  }
 
-details {
+  details {
     margin-top: 2rem;
     background: #e0f2f1;
     padding: 1rem;
     border-radius: 8px;
-}
+  }
 
-summary {
+  summary {
     font-weight: bold;
     cursor: pointer;
-}
+  }
 
-.img-topic {
+  .img-topic {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
     margin: 1rem 0;
     border-radius: 8px;
-}
+  }
